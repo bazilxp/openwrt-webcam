@@ -4,7 +4,7 @@
 #  Date 20/02/2012
 
 
-export dst="http//xxxx/actionpicture.php"
+export dst="http//xxxx/server.php"
 export img="/tmp/frame.jpg"
 while :
 do
