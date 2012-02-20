@@ -5,17 +5,19 @@
 <body>
 
 <img src="frame.jpg" id="pic"/>
-<script type="JavaScript"><!--
+<script type="text/javascript"><!--
 function reloadImage() 
 {
-    var now = new Date();
-    if (document.images) 
+	var image = document.getElementById("pic");
+	if (image)
     {
-       document.images.pic.src = 'frame.jpg?' + now.getTime();
+       var now= new Date();
+       image.src = 'frame.jpg?'+ now.getTime();
     }
-    setTimeout('reloadImage()',2000);
 }
-    setTimeout('reloadImage()',2000);
+
+reloadImage();
+setInterval(reloadImage,2000);
 //--></script>
 </body>
 </html>
