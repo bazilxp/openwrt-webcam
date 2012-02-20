@@ -1,0 +1,21 @@
+<html>
+<head>
+<!-- meta http-equiv="refresh" content="10" /-->
+</head>
+<body>
+
+<img src="frame.jpg" id="pic"/>
+<script language="JavaScript"><!--
+function reloadImage() 
+{
+    var now = new Date();
+    if (document.images) 
+    {
+       document.images.pic.src = 'frame.jpg?' + now.getTime();
+    }
+    setTimeout('reloadImage()',2000);
+}
+    setTimeout('reloadImage()',2000);
+//--></script>
+</body>
+</html>
